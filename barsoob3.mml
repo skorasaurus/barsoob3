@@ -65,11 +65,14 @@
         "dbname": "barsoob3",
         "host": "localhost",
         "user": "postgres",
-        "password": "yessem"
+        "password": "yessem",
+        "id": "bars",
+        "project": "barsoob3"
       }
     }
   ],
   "description": "Bars Of Old Brooklyn",
   "attribution": "",
-  "legend": "the legend,"
+  "legend": "the legend,",
+  "name": "Bars Of Old Brooklyn3"
 }
