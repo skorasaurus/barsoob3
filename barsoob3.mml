@@ -6,9 +6,9 @@
     41.45974597
   ],
   "center": [
-    -81.71901226043677,
-    41.433460726870415,
-    14
+    -81.7080289497968,
+    41.43813870869324,
+    15
   ],
   "format": "png",
   "interactivity": false,
@@ -47,7 +47,9 @@
         "dbname": "barsoob3",
         "host": "localhost",
         "user": "postgres",
-        "password": "yessem"
+        "password": "yessem",
+        "id": "roads",
+        "project": "barsoob3"
       }
     },
     {
