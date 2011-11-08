@@ -4,7 +4,7 @@
 @trunk: #0f5fff;
 @road: #bbb;
 @track: @road;
-@footway: #ffe26e;
+@footway: #da0707;
 
 
 #roads[highway='motorway'] {

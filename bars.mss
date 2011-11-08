@@ -13,7 +13,7 @@
     marker-fill: #024d75;
 }
 
-
+/*da0707 red */  
 #bars {
   [amenity='bar'], [amenity='pub'], {
     text-face-name:@font_reg;
@@ -26,3 +26,6 @@
     text-size:11;
     text-wrap-width:20; } 
   }
+
+
+/* Multiple zoom levels, Write in */
