@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Map>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#565656">
+
+<FontSet name="fontset-0">
+  <Font face-name="Ubuntu Regular"/>
+  <Font face-name="Arial Regular"/>
+  <Font face-name="DejaVu Sans Book"/>
+</FontSet>
+<Style name="roads" filter-mode="first">
+  <Rule>
+    <Filter>([highway] = 'tertiary')</Filter>
+    <LineSymbolizer stroke="#fffe94"/>
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'secondary')</Filter>
+    <LineSymbolizer stroke="#fffe94"/>
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'primary')</Filter>
+    <LineSymbolizer stroke="#fffe94"/>
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'motorway')</Filter>
+    <LineSymbolizer stroke="#ffff00"/>
+  </Rule>
+</Style>
+<Layer name="roads" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roads</StyleName>
+    <Datasource>
+       <Parameter name="table"><![CDATA[planet_osm_line]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[barsoob3]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="password"><![CDATA[yessem]]></Parameter>
+       <Parameter name="id"><![CDATA[roads]]></Parameter>
+       <Parameter name="project"><![CDATA[barsoob3]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Style name="bars" filter-mode="first">
+  <Rule>
+    <Filter>([amenity] = 'bar')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" allow-overlap="true" fill="#000000" halo-fill="rgba(255, 255, 255, 0.8)" halo-radius="2" placement="interior" size="11" wrap-width="20">[name]</TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([amenity] = 'pub')</Filter>
+    <TextSymbolizer fontset-name="fontset-0" allow-overlap="true" fill="#000000" halo-fill="rgba(255, 255, 255, 0.8)" halo-radius="2" placement="interior" size="11" wrap-width="20">[name]</TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Filter>([amenity] = 'bar,pub')</Filter>
+    <MarkersSymbolizer height="5" stroke="#024d75" fill="#024d75"/>
+  </Rule>
+</Style>
+<Layer name="bars" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>bars</StyleName>
+    <Datasource>
+       <Parameter name="table"><![CDATA[planet_osm_point]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
+       <Parameter name="extent"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="dbname"><![CDATA[barsoob3]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+       <Parameter name="password"><![CDATA[yessem]]></Parameter>
+       <Parameter name="id"><![CDATA[bars]]></Parameter>
+       <Parameter name="project"><![CDATA[barsoob3]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
