@@ -1,4 +1,4 @@
-@font_reg: "Ubuntu Regular","Arial Regular","DejaVu Sans Book";
+@font_reg: "Ubuntu Regular";
   
 /* toggle comments immediately below for the map */
 

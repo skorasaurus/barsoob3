@@ -1,4 +1,4 @@
-@font_reg: "Ubuntu Regular","Arial Regular","DejaVu Sans Book"; 
+@font_reg: "Ubuntu Regular"; 
 
 /* creates the little blue marker for each bar */ 
 #bars [amenity='bar,pub']{
@@ -7,7 +7,7 @@
     marker-fill: #024d75;
 }
 
-/* #bars[amenity='pub'] {
+ #bars[amenity='pub'] {
  marker-height: 5;
     marker-line-color: #024d75;
     marker-fill: #024d75;
@@ -22,10 +22,12 @@
     text-fill:#000;
     text-halo-fill:fadeout(#fff,20);
     text-halo-radius:2;
+    text-avoid-edges:true; 
     text-placement:interior;
-    text-size:11;
+    text-size:18;
     text-wrap-width:20; } 
-  }
+  } 
 
 
+/* text size refers to 
 /* Multiple zoom levels, Write in */
