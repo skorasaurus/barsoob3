@@ -14,6 +14,8 @@
 }
 
 /*da0707 red */  
+
+/*
 #bars {
   [amenity='bar'], [amenity='pub'], {
     text-face-name:@font_reg;
@@ -22,11 +24,11 @@
     text-fill:#000;
     text-halo-fill:fadeout(#fff,20);
     text-halo-radius:2;
-   /* text-avoid-edges:true; */
+    text-avoid-edges:true; 
     text-placement:interior;
     text-size:30;
     text-wrap-width:20; } 
-  } 
+  } */
 
 
 /* text size refers to 

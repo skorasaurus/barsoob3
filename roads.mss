@@ -6,7 +6,7 @@
 @track: @road;
 @footway: #da0707;
 
-
+#roads[highway='motorway_link'],
 #roads[highway='motorway'] {
     line-color: yellow;
 }
