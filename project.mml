@@ -6,8 +6,8 @@
     41.45974597
   ],
   "center": [
-    -81.72342382371326,
-    41.431930399894796,
+    -81.71825520694138,
+    41.43339738290752,
     14
   ],
   "format": "png",
@@ -67,9 +67,7 @@
         "dbname": "barsoob3",
         "host": "localhost",
         "user": "postgres",
-        "password": "yessem",
-        "id": "bars",
-        "project": "barsoob3"
+        "password": "yessem"
       }
     }
   ],

@@ -14,10 +14,10 @@
     text-placement:interior;
     text-size:11;
     text-wrap-width:20; } 
-}
+} */ 
 
+/*notes and whatnot */ 
 
-/*notes and whatnot*
 /* .amenity[zoom>=15][amenity='kindergarten'] { point-file: url(./res/school-elementary-10.png); } 
 was in osm-bright - places.mss */
   

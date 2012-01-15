@@ -1,17 +1,14 @@
 @font_reg: "Ubuntu Regular"; 
 
 /* creates the little blue marker for each bar */ 
-#bars [amenity='bar,pub']{
- marker-height: 5;
-    marker-line-color: #024d75;
-    marker-fill: #024d75;
-}
 
+
+/*
  #bars[amenity='pub'] {
  marker-height: 5;
     marker-line-color: #024d75;
     marker-fill: #024d75;
-}
+} */
 
 /*da0707 red */  
 
